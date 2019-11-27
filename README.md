@@ -12,19 +12,19 @@ In order to run the script properly, you need to make sure that a Docker contain
 From home directory, run the following. It takes a while.
 
 •	Clone the TensorRT repository and navigate to BERT demo directory<br>
-git clone --recursive https://github.com/NVIDIA/TensorRT && cd TensorRT/demo/BERT
+<i>git clone --recursive https://github.com/NVIDIA/TensorRT && cd TensorRT/demo/BERT</i>
 
-•	Create and launch the docker image
-sh python/create_docker_container.sh
+•	Create and launch the docker image<br>
+<i>sh python/create_docker_container.sh</i>
 
-•	Build the plugins and download the fine-tuned models
-cd TensorRT/demo/BERT && sh python/build_examples.sh base fp16 384
+•	Build the plugins and download the fine-tuned models<br>
+<i>cd TensorRT/demo/BERT && sh python/build_examples.sh base fp16 384</i>
 
 •	Build the TensorRT runtime engine and start it. If you don't nohup this, you won't be able to do anything else.<br>
-nohup python python/bert_builder.py -m /workspace/models/fine-tuned/bert_tf_v2_base_fp16_384_v2/model.ckpt-8144 -o bert_base_384.engine -b 1 -s 384 -c /workspace/models/fine-tuned/bert_tf_v2_base_fp16_384_v2 > tensorrt.out &
+<i>nohup python python/bert_builder.py -m /workspace/models/fine-tuned/bert_tf_v2_base_fp16_384_v2/model.ckpt-8144 -o bert_base_384.engine -b 1 -s 384 -c /workspace/models/fine-tuned/bert_tf_v2_base_fp16_384_v2 > tensorrt.out &</i>
 
-•	After you have started the engine, you can then run the Q&A query in the script
-python python/bert_inference_loop.py
+•	After you have started the engine, you can then run the Q&A query in the script<br>
+<i>python python/bert_inference_loop.py</i>
 
 •	One caveat is that the TensorRT engine will terminate after a period of time.  Be sure it is running before you perform you query.
 
