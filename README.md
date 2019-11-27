@@ -41,6 +41,6 @@ cd TensorRT/demo/BERT && sh python/build_examples.sh base fp16 384
 nohup python python/bert_builder.py -m /workspace/models/fine-tuned/bert_tf_v2_base_fp16_384_v2/model.ckpt-8144 \
 -o bert_base_384.engine -b 1 -s 384 -c /workspace/models/fine-tuned/bert_tf_v2_base_fp16_384_v2 > tensorrt.out &
 
-After you have started the engine, you can then run the query (see script for syntax).
+After you have started the engine, you can then run the Q&A query in the script "bert_inference_loop.py" (see script for syntax).
 
 More functionality will be added over time.
