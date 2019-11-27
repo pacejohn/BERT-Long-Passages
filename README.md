@@ -31,13 +31,13 @@ From home directory, run the following. It takes a while.
 <h1><b><u>Files I am using for queries</u></b></h1><br>
 There are 3 files that can I am using as input passages.  Feel free to try it with your own passages.
 
-22532_Full_Document.txt - this is the full document I am using. If you ask a question about the first part, it will return the correct answer. If you ask a question about a later part, it will not find the answer.
+<b>22532_Full_Document.txt</b> - this is the full document I am using. If you ask a question about the first part, it will return the correct answer. If you ask a question about a later part, it will not find the answer.
 
-22532_Short_Document_With_Answers.txt - this is a shortened passage that has answers to the query. If you use the same query as I did for the question, it will find 2 answers. The one with the higher probability is the correct answer.
+<b>22532_Short_Document_With_Answers.txt</b> - this is a shortened passage that has answers to the query. If you use the same query as I did for the question, it will find 2 answers. The one with the higher probability is the correct answer.
 
-22532_Short_Document_Without_Answers.txt - this is a shortened passage that does not have the answers to the query. If you use the same query as I did for the question, it will not find any answers.
+<b>22532_Short_Document_Without_Answers.txt</b> - this is a shortened passage that does not have the answers to the query. If you use the same query as I did for the question, it will not find any answers.
 
-The question that is asked is "How many patients experienced recurrence at 12 years of age?" Feel free to experiment.
+The question that is asked is <b><i>"How many patients experienced recurrence at 12 years of age?"</i></b> Feel free to experiment.
 
 I welcome your feedback and suggestions.  Be sure to follow me on Twitter @pacejohn as well as my company @markiiisystems.
 
