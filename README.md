@@ -11,7 +11,7 @@ In order to run the script properly, you need to make sure that a Docker contain
 
 From home directory, run the following. It takes a while.
 
-•	Clone the TensorRT repository and navigate to BERT demo directory
+•	Clone the TensorRT repository and navigate to BERT demo directory<br>
 git clone --recursive https://github.com/NVIDIA/TensorRT && cd TensorRT/demo/BERT
 
 •	Create and launch the docker image
