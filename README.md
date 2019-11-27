@@ -6,7 +6,7 @@ One drawback of BERT is that only short passages can be queried when performing 
 
 I have created a script that allows you to query longer passages and get the correct answer.  I take an input passage and break it into paragraphs that are delimited by \n. Each paragraph is then queried to try to find the answer. All answers that are returned are put into a list. The list is then analyzed to find the answer with the highest probability.  This is returned as the final answer. When you run the script, you will want to change the paths to correspond with your setup.  
 
-Setup
+<h1><b><u>Setup</u></b></h1><br>
 In order to run the script properly, you need to make sure that a Docker container is created. Before running the query, be sure to start the TensorRT engine. Here are the steps Nvidia says to do and that I am doing.
 
 From home directory, run the following. It takes a while.
