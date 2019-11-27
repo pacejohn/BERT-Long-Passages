@@ -28,7 +28,7 @@ From home directory, run the following. It takes a while.
 
 •	One caveat is that the TensorRT engine will terminate after a period of time.  Be sure it is running before you perform you query.
 
-Files I am using for queries
+<h1><b><u>Files I am using for queries</u></b></h1><br>
 There are 3 files that can I am using as input passages.  Feel free to try it with your own passages.
 
 22532_Full_Document.txt - this is the full document I am using. If you ask a question about the first part, it will return the correct answer. If you ask a question about a later part, it will not find the answer.
